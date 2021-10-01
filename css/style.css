@@ -1,0 +1,124 @@
+/*Geral*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  color: #fff;
+  font-family: 'Lexend Deca';
+  font-size: 1rem;
+}
+
+p{
+  max-width: 180px;
+  line-height: 1.6em;
+  margin-bottom: 80px;
+}
+
+/*Style*/
+main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 150px auto;
+}
+
+.titulo{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 3.8em;
+  font-family: "Big Shoulders Display";
+}
+
+.carro-1, .carro-2, .carro-3{
+  padding: 30px;
+}
+
+.carro-1{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #E38828;
+}
+
+.carro-2{
+  background-color: #216A70;
+}
+
+.carro-3{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #134342;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  max-width: 100px;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 12px;
+  transition: 230ms;
+}
+
+.carro-1 .btn{
+  color: #E38828;
+}
+
+.carro-2 .btn{
+  color: #216A70;
+}
+
+.carro-3 .btn{
+  color: #134342;
+}
+
+.carro-1 .btn:hover, .carro-2 .btn:hover, .carro-3 .btn:hover{
+  color: #fff;
+  background: none;
+}
+
+@media (max-width: 739px){
+  main{
+    max-width: 300px;
+    grid-template-columns: 1fr;
+    margin: 50px auto;
+  }
+
+  .carro-1{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  .carro-3{
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .btn, p{
+    margin: 30px auto;
+  }
+
+  .titulo{
+    line-height: 1.4em;
+    text-align: center;
+  }
+} 
+
+
+
+
+
+
